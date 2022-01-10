@@ -1,0 +1,37 @@
+# Bill splitter tool
+
+import random
+x = input("Enter the number of friends joining (including you):\n")
+x = int(x)
+counter = 0
+counter2 = 0
+party_n = []
+
+
+if x <= 0:
+    print('No one is joining for the party')
+else:
+    print("\nEnter the name of every friend (including you), each on a new line:")
+    while counter < x:
+        party_n.append(input())
+        counter += 1 
+           
+    next
+    val = int(input("\nEnter the total bill value:\n"))
+    pay = round(val/x, 2)
+    party = dict.fromkeys(party_n, pay)
+    
+    next
+    asw = str(input('\nDo you want to use the "Who is lucky?" feature? Write Yes/No:\n'))
+    if asw == 'Yes':
+        Name = random.choice(party_n)
+        print(f'\n{Name} is the lucky one!')
+        pay = round(val/(x-1),2)
+        party = dict.fromkeys(party_n, pay)
+        party[Name] = 0
+        print()
+        print(party)
+    elif asw == 'No':
+        print(f'\nNo one is going to be lucky\n')
+        print(party)
+    
