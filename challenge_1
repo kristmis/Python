@@ -1,0 +1,13 @@
+'''challenge 1 of linkedinlearning'''
+
+print('Enter a character between 0 - 9 :')
+numbers = list(range(0,10))
+#start = str(input())
+
+#if (len(start)) == 0:
+#    print('nothing entered')
+ #   continue
+#elif start not in numbers:
+ #   print("This is not a number between 0 and 9")
+#else:
+ #   print('that was correct')
